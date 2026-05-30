@@ -1,0 +1,1 @@
+import{a as e,i as t,o as n,t as r}from"./index-uGNYgtgx.js";var i={},a={class:`container`};function o(r,i){return n(),e(`div`,a,[...i[0]||=[t(`h2`,null,`Elements`,-1)]])}var s=r(i,[[`render`,o]]);export{s as default};
