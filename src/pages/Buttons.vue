@@ -10,8 +10,8 @@ const icons = [
   { name: 'fa-github', color: '#333' }
 ]
 
-const activeIndex1 = ref(-1)
-const activeColor1 = ref('')
+const activeIndex1 = ref(1)
+const activeColor1 = ref('#1da1f2')
 const hoverColor1 = ref('')
 const btnClick1 = index => {
   activeIndex1.value = index
@@ -19,8 +19,8 @@ const btnClick1 = index => {
 }
 const btnMouseOver1 = index => (hoverColor1.value = icons[index].color)
 
-const activeIndex2 = ref(-1)
-const activeColor2 = ref('')
+const activeIndex2 = ref(4)
+const activeColor2 = ref('#ef4056')
 const hoverColor2 = ref('')
 const btnClick2 = index => {
   activeIndex2.value = index
@@ -99,8 +99,10 @@ const btnMouseOver2 = index => (hoverColor2.value = icons[index].color)
         box-shadow: var(--shadow2);
       }
 
-      &:hover {
-        color: v-bind(hoverColor1);
+      @media (pointer: fine) {
+        &:hover {
+          color: v-bind(hoverColor1);
+        }
       }
     }
 
@@ -111,8 +113,10 @@ const btnMouseOver2 = index => (hoverColor2.value = icons[index].color)
         color: v-bind(activeColor2);
       }
 
-      &:hover {
-        color: v-bind(hoverColor2);
+      @media (pointer: fine) {
+        &:hover {
+          color: v-bind(hoverColor2);
+        }
       }
     }
   }

@@ -36,12 +36,15 @@
 
 .elements {
   --hue: 275;
-  --text-color: hsl(var(--hue), 35%, 71%);
-  --bg-color: hsl(var(--hue), 46%, 93%);
+  --text-color: hsl(var(--hue), 26%, 44%);
+  --bg-color: hsl(var(--hue), 20%, 88%);
+  --active-color: hsl(var(--hue), 65%, 50%);
   --shadow1:
     0.3rem 0.3rem 0.6rem hsl(var(--hue), 39%, 85%), -0.2rem -0.2rem 0.5rem #fff;
   --shadow2:
     inset 0.2rem 0.2rem 0.5rem hsl(var(--hue), 39%, 85%),
     inset -0.2rem -0.2rem 0.5rem #fff;
-  --active-color: hsl(var(--hue), 96%, 68%);
+  --shadow3:
+    inset 1px 1px 2px hsl(var(--hue), 42%, 78%),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.75);
 }

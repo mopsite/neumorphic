@@ -13,8 +13,8 @@ const logo = [
 const icons1 = ['fa-envelope', 'fa-bars', 'fa-user']
 const icons2 = ['fa-plus', 'fa-image', 'fa-map-marker-alt', 'fa-smile']
 
-const activeIndex1 = ref(-1)
-const activeIndex2 = ref(-1)
+const activeIndex1 = ref(2)
+const activeIndex2 = ref(1)
 const iconClick1 = index => (activeIndex1.value = index)
 const iconClick2 = index => (activeIndex2.value = index)
 </script>
