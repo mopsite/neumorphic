@@ -4,6 +4,9 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
+const isVercel = !!process.env.VERCEL
+const basePath = isVercel ? '/' : '/neumorphic/'
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), vueDevTools()],
@@ -12,7 +15,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: process.env.VERCEL ? '/' : '/neumorphic/',
+  base: basePath,
   build: {
     assetsDir: 'assets',
     outDir: 'dist'
