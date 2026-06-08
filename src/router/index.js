@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory('/neumorphic/'),
+  history: createWebHistory(import.meta.env.PROD ? '/' : '/neumorphic/'),
   routes: [
     { path: '/', redirect: '/toggles' },
     { path: '/toggles', component: () => import('../pages/Toggles.vue') },
