@@ -23,7 +23,7 @@ watch(hue, newHue => {
 
 <template>
   <div class="container">
-    <div class="main">
+    <div class="main el">
       <div class="switch-el">
         <Switch :switch-id="'switch1'" />
         <Switch :switch-id="'switch2'" :is-checked="true" />
@@ -71,7 +71,7 @@ watch(hue, newHue => {
 </template>
 
 <style>
-.main {
+.main.el {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
